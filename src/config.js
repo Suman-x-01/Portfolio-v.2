@@ -1,6 +1,6 @@
 // ===== EDIT YOUR DETAILS HERE =====
 export const CFG = {
-  key: "",
+  key: "7b9cc344-a009-4f87-a0da-3501ab48813e",
 
   // Contact details
   phone: "9732335816", // Replace with your actual mobile number
@@ -16,8 +16,8 @@ export const CFG = {
   wa: "Hi Suman, I found your portfolio and would like to connect.",
 
   // Other details
-  resume: "/resume.pdf",
-  photo: '/images/suman.png',
+  resume: "/SumanKumarNayak.pdf",
+  photo: "/images/suman.png",
 };
 
 export const TITLES = [
@@ -37,12 +37,12 @@ export const SKILLS = [
   {
     t: "Backend",
     d: "APIs and server-side logic.",
-    tags: ["Python", "REST APIs", "Node.js"],
+    tags: ["Python", "REST APIs", "Java", "Spring Boot"],
   },
   {
     t: "Data",
     d: "Reliable storage and queries.",
-    tags: ["SQL", "MySQL", "MongoDB"],
+    tags: ["SQL", "MySQL", "MongoDB", "Spring Data JPA"],
   },
   {
     t: "Workflow",
@@ -74,36 +74,30 @@ export const PROJECTS = [
 
 export const EDU = [
   {
-    when: "Year – Year",
+    when: "2022 – 2024",
     t: "Master of Computer Applications (MCA)",
-    d: "University name, specialisation and notable coursework.",
+    d: "Brainware University , Computational Science.",
     icon: "cap",
   },
   {
-    when: "Year – Year",
-    t: "Bachelor’s Degree",
-    d: "College name and field of study.",
-    icon: "bank",
+    when: "2019 – 2022",
+    t: "Bachelor of Computer Applications (BCA)",
+    d: "Global Group of Instutions and Computer Application.",
+    icon: "cap",
   },
 ];
 
 export const EXP = [
   {
-    when: "Jan 2022 – Present",
-    t: "Your Job Title",
-    d: "Company name",
-    icon: "work",
+    when: "July 2026- Present",
+    t: "Training",
+    d: "Webskitters Academy",
+    icon: "Training",
   },
   {
-    when: "Jun 2021 – Jan 2022",
-    t: "Previous Role",
-    d: "Company or client name",
-    icon: "work",
-  },
-  {
-    when: "Jan 2020 – Jun 2021",
-    t: "Internship or Freelance",
-    d: "What you built and learned",
+    when: "Sept 2025 – Mar 2026",
+    t: "Software Developer Intern ",
+    d: "ConsultIT Technology",
     icon: "work",
   },
 ];

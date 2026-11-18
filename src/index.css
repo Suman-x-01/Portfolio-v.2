@@ -180,3 +180,15 @@ section.sec::after{width:200px;height:200px;border-radius:50%;border:2px dashed 
 .art .ln{transform-box:fill-box;transform-origin:0 50%;animation:ln 3s ease-in-out infinite}
 @keyframes ln{0%,100%{transform:scaleX(.35)}50%{transform:scaleX(1)}}
 @media (max-width:860px){.split{grid-template-columns:1fr}.art{order:-1}.art svg{width:min(300px,80%)}}
+
+
+/* mobile navbar + horizontal overflow fix */
+/* html,body{overflow-x:clip;max-width:100%}
+.hero,section.sec,footer{overflow-x:clip}
+nav{left:12px;right:12px;width:auto;max-width:1120px;margin-inline:auto;transform:none}
+.logo{white-space:nowrap}
+.ctrl{flex:none}
+@media (max-width:720px){
+  nav{padding:8px 10px 8px 16px}
+  .logo{font-size:1rem;min-width:0;overflow:hidden;text-overflow:ellipsis}
+} */

@@ -4,7 +4,7 @@ import { Cap, Bank } from './Icons.jsx';
 import { EDU } from '../config.js';
 export default function Education() {
   return (
-    <Section id="education" title="Education" sub="Add your institutions and years in src/config.js.">
+    <Section id="education" title="Education" sub="Educational Qualification">
       <div className="split">
         <div className="timeline">
           {EDU.map(e => (
