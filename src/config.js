@@ -36,7 +36,6 @@ export const TITLES = [
   "Software Developer",
 ];
 
-// l = skill level in percent. Keep these honest.
 export const SKILLS = [
   {
     t: "Frontend",
