@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Moon, Sun, Bars, Close } from './Icons.jsx';
-const LINKS = [['skills','Skills'],['projects','Projects'],['experience','Experience'],['education','Education'],['contact','Contact']];
+
+const LINKS = [['about','About'],['skills','Skills'],['projects','Projects'],['experience','Experience'],['education','Education'],['certifications','Certifications'],['contact','Contact']];
 export default function Navbar({ onTheme }) {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);

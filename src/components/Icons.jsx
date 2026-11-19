@@ -29,3 +29,7 @@ export const LeetCode = () => (
     <path d="M10 16h10" />
   </svg>
 );
+
+export const Award = () => <S strokeWidth="1.8"><circle cx="12" cy="9" r="6" /><path d="M8.5 14 7 21l5-3 5 3-1.5-7" /></S>;
+export const ArrowUp = () => <S strokeWidth="2.4"><path d="M12 19V5M5 12l7-7 7 7" /></S>;
+export const External = () => <S><path d="M14 4h6v6M20 4 10 14M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></S>;

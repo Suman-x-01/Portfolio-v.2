@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import Section from './Section.jsx';
+import { GitHub, External } from './Icons.jsx';
 import { PROJECTS } from '../config.js';
 function ProjectCard({ p }) {
   const [img, setImg] = useState(p.img);
@@ -14,6 +15,10 @@ function ProjectCard({ p }) {
       <input type="file" accept="image/*" hidden ref={file} onChange={pick} />
       <h3>{p.t}</h3><p>{p.d}</p>
       <div className="tags">{p.tags.map(t => <span key={t}>{t}</span>)}</div>
+      <div className="plinks">
+        <a className={'btn main sm' + (p.live ? '' : ' off')} href={p.live || undefined} target="_blank" rel="noopener">Live demo <External /></a>
+        <a className={'btn ghost glass sm' + (p.code ? '' : ' off')} href={p.code || undefined} target="_blank" rel="noopener">Code <GitHub /></a>
+      </div>
     </div>
   );
 }

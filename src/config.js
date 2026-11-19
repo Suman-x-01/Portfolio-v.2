@@ -19,35 +19,56 @@ export const CFG = {
   resume: "/SumanKumarNayak.pdf",
   photo: "/images/suman.png",
 };
-
+export const ABOUT = {
+  text: "Hi, I’m Suman. I’m a Full Stack Developer with an MCA background who enjoys turning ideas into working, user-friendly web applications. I work across the stack, from React interfaces to Python back ends, and I like learning by building real projects.",
+  facts: [
+    ["Location", "Kolkata, West Bengal, India"],
+    ["Education", "MCA"],
+    ["Focus", "Full Stack Development"],
+    ["Status", "Open to work"],
+  ],
+};
 export const TITLES = [
   "Full Stack Developer",
   "Python Developer",
-  "React Developer",
+  "Java Developer",
   "Backend Developer",
   "Software Developer",
 ];
 
+// l = skill level in percent. Keep these honest.
 export const SKILLS = [
   {
     t: "Frontend",
-    d: "Responsive, accessible interfaces.",
-    tags: ["React", "JavaScript", "HTML", "CSS"],
+    items: [
+      { n: "React", l: 85 },
+      { n: "JavaScript", l: 80 },
+      { n: "HTML & CSS", l: 90 },
+    ],
   },
   {
     t: "Backend",
-    d: "APIs and server-side logic.",
-    tags: ["Python", "REST APIs", "Java", "Spring Boot"],
+    items: [
+      { n: "Python", l: 85 },
+      { n: "Node.js", l: 65 },
+      { n: "REST APIs", l: 80 },
+    ],
   },
   {
     t: "Data",
-    d: "Reliable storage and queries.",
-    tags: ["SQL", "MySQL", "MongoDB", "Spring Data JPA"],
+    items: [
+      { n: "SQL", l: 80 },
+      { n: "MySQL", l: 75 },
+      { n: "MongoDB", l: 65 },
+    ],
   },
   {
     t: "Workflow",
-    d: "Clean, collaborative delivery.",
-    tags: ["Git", "GitHub", "VS Code"],
+    items: [
+      { n: "Git & GitHub", l: 85 },
+      { n: "VS Code", l: 90 },
+      { n: "Deployment", l: 65 },
+    ],
   },
 ];
 
@@ -82,7 +103,7 @@ export const EDU = [
   {
     when: "2019 – 2022",
     t: "Bachelor of Computer Applications (BCA)",
-    d: "Global Group of Instutions and Computer Application.",
+    d: "Global Group of Instutions, Computer Application.",
     icon: "cap",
   },
 ];
@@ -99,5 +120,32 @@ export const EXP = [
     t: "Software Developer Intern ",
     d: "ConsultIT Technology",
     icon: "work",
+  },
+];
+
+export const CERTS = [
+  {
+    t: "Certification Name",
+    by: "Issuing organisation",
+    year: "2025",
+    img: "",
+    desc: "One or two lines about what you learned or achieved.",
+    link: "",
+  },
+  {
+    t: "Hackathon or Contest Achievement",
+    by: "Event name",
+    year: "2025",
+    img: "",
+    desc: "One or two lines about what you built or how you placed.",
+    link: "",
+  },
+  {
+    t: "Course Certificate",
+    by: "Platform name",
+    year: "2024",
+    img: "",
+    desc: "One or two lines about the skills this course covered.",
+    link: "",
   },
 ];

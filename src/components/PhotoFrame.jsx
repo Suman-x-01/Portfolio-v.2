@@ -19,6 +19,7 @@ export default function PhotoFrame() {
           {src && <img src={src} alt="Portrait of Suman Kumar Nayak" />}
           {!src && <div className="ph">SN<small>Click to add your photo</small></div>}
         </div>
+        <span className="badge glass"><i />Open to work</span>
       </div>
       <input type="file" accept="image/*" hidden ref={file} onChange={pick} />
     </div>
