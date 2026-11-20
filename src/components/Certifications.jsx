@@ -1,23 +1,12 @@
-import { useRef, useState } from 'react';
 import Section from './Section.jsx';
+import ImageBox from './ImageBox.jsx';
 import { External } from './Icons.jsx';
 import { CERTS } from '../config.js';
 
 function CertCard({ c }) {
-  const [img, setImg] = useState(c.img);
-  const file = useRef(null);
-  const pick = e => {
-    const f = e.target.files[0]; if (!f) return;
-    const r = new FileReader(); r.onload = () => setImg(r.result); r.readAsDataURL(f);
-  };
-  const choose = () => { if (!c.img) file.current.click(); };
   return (
     <div className="card glass cert">
-      <div className={'shot' + (img ? ' has' : '')} tabIndex={0} role="button" aria-label="Certificate image"
-        onClick={choose} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); choose(); } }}>
-        {img ? <img src={img} alt={c.t + ' certificate'} /> : <span>Add certificate image</span>}
-      </div>
-      <input type="file" accept="image/*" hidden ref={file} onChange={pick} />
+      <ImageBox src={c.img} alt={c.t + ' certificate'} empty="Certificate image coming soon" />
       <span className="when">{c.year}</span>
       <h3>{c.t}</h3>
       <p className="by">{c.by}</p>

@@ -40,16 +40,18 @@ export const SKILLS = [
   {
     t: "Frontend",
     items: [
-      { n: "React", l: 85 },
-      { n: "JavaScript", l: 80 },
-      { n: "HTML & CSS", l: 90 },
+      { n: "React", l: 65 },
+      { n: "JavaScript", l: 60 },
+      { n: "HTML & CSS", l: 80 },
     ],
   },
   {
     t: "Backend",
     items: [
-      { n: "Python", l: 85 },
-      { n: "Node.js", l: 65 },
+      { n: "Python", l: 65 },
+      { n: "Java", l: 75 },
+      { n: "Spring Boot", l: 65 },
+      { n: "Django", l: 45 },
       { n: "REST APIs", l: 80 },
     ],
   },
@@ -73,22 +75,20 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
-    t: "Project One",
+    t: "ChatSpot",
     d: "A full stack web app with authentication, a REST API and a responsive React front end.",
     tags: ["React", "Python"],
-    img: "",
+    img: "/images/project1.png",
+    // live: 'https://your-project-one.netlify.app',      // Live demo button
+    code: "https://github.com/Suman-x-01/Chatspot", // Code (GitHub) button
   },
   {
-    t: "Project Two",
+    t: "Learnify",
     d: "A dashboard that turns raw database records into clear, filterable charts.",
     tags: ["JavaScript", "SQL"],
-    img: "",
-  },
-  {
-    t: "Project Three",
-    d: "A backend service for managing records, with validation and role-based access.",
-    tags: ["Python", "API"],
-    img: "",
+    img: "/images/project2.png",
+    live: "",
+    code: "https://github.com/Suman-x-01/Learnify",
   },
 ];
 
@@ -124,27 +124,28 @@ export const EXP = [
 
 export const CERTS = [
   {
-    t: "Certification Name",
-    by: "Issuing organisation",
-    year: "2025",
-    img: "",
-    desc: "One or two lines about what you learned or achieved.",
+    t: "Webdeveloper Intern",
+    by: "ConsultIT Technology",
+    year: "09.25 - 05.26",
+    img: "/images/Certificate2.jpg",
+
+    desc: "Physical Internship",
     link: "",
   },
   {
-    t: "Hackathon or Contest Achievement",
-    by: "Event name",
-    year: "2025",
-    img: "",
-    desc: "One or two lines about what you built or how you placed.",
+    t: "Java FullStack Development",
+    by: "Code For Success",
+    year: "11.2024",
+    img: "/images/Certificate1.jpg",
+    desc: "Online Training",
     link: "",
   },
-  {
-    t: "Course Certificate",
-    by: "Platform name",
-    year: "2024",
-    img: "",
-    desc: "One or two lines about the skills this course covered.",
-    link: "",
-  },
+  // {
+  //   t: "Course Certificate",
+  //   by: "Platform name",
+  //   year: "2024",
+  //   img: "",
+  //   desc: "One or two lines about the skills this course covered.",
+  //   link: "",
+  // },
 ];

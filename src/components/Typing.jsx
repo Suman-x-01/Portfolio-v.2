@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { TITLES } from '../config.js';
+
 export default function Typing() {
   const [text, setText] = useState('');
   useEffect(() => {
@@ -14,5 +15,14 @@ export default function Typing() {
     tick();
     return () => clearTimeout(t);
   }, []);
-  return <div className="typing" aria-live="off"><span>{text}</span><span className="cursor" /></div>;
+  return (
+    <div className="code" aria-label="Typing animation of my job titles">
+      <div className="cbar"><i /><i /><i /><span>developer.js</span></div>
+      <div className="cbody" aria-hidden="true">
+        <div className="cl"><span className="n">1</span><code><span className="k">const</span> <span className="v">developer</span> <span className="o">= {'{'}</span></code></div>
+        <div className="cl"><span className="n">2</span><code>  <span className="p">role</span><span className="o">:</span> <span className="s">"{text}</span><span className="cursor" /><span className="s">"</span><span className="o">,</span></code></div>
+        <div className="cl"><span className="n">3</span><code><span className="o">{'};'}</span></code></div>
+      </div>
+    </div>
+  );
 }
