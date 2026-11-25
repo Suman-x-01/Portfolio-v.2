@@ -12,7 +12,7 @@ export default function PhotoFrame() {
     <div className="photo-side">
       <span className="ring"><i /><i className="b" /></span><span className="ring r2"><i /></span>
       <span className="dot d1" /><span className="dot d2" /><span className="dot d3" />
-      <span className="chip glass c1">&lt;/&gt; Code</span><span className="chip glass c2">MCA</span>
+      <span className="chip glass c1">Full stack Dev</span><span className="chip glass c2">MCA</span>
       <div className={'frame glass' + (src ? ' has' : '')} tabIndex={0} role="button" aria-label="Photograph frame. Activate to choose your photo."
         onClick={() => file.current.click()} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); file.current.click(); } }}>
         <div className="pic">

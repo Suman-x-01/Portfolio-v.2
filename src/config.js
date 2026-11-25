@@ -16,7 +16,8 @@ export const CFG = {
   wa: "Hi Suman, I found your portfolio and would like to connect.",
 
   // Other details
-  resume: "/SumanKumarNayak.pdf",
+  resume: "/Suman_Kumar_Nayak_Resume.pdf",
+  resumeName: "Suman_Kumar_Nayak_Resume.pdf",
   photo: "/images/suman.png",
 };
 export const ABOUT = {
